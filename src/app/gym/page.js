@@ -48,7 +48,7 @@ export default function GymPage() {
 
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
             <div className="relative w-full max-w-lg">
-              <img src={images[0]} alt="hero" className="w-full h-auto rounded-3xl shadow-2xl" />
+              <img src={images[0]} alt="hero" className="w-full h-[70vh] object-cover rounded-3xl shadow-2xl" />
               <div className="absolute left-6 bottom-6 bg-black/60 text-white px-4 py-2 rounded-lg">Modern Facilities</div>
             </div>
           </div>
@@ -101,7 +101,7 @@ export default function GymPage() {
             {images.slice(1).map((src, i) => (
               <div key={i} className="relative rounded-xl overflow-hidden">
                 <img src={src} alt={`gallery-${i}`} className="w-full h-56 object-cover" />
-                <div className="absolute left-4 bottom-4 bg-black/60 text-white px-3 py-1 rounded">{i === 0 ? "Gym Floor" : i === 1 ? "Coaching" : "Recovery"}</div>
+                <div className="absolute left-4 bottom-4 bg-black/60 text-white px-3 py-1 rounded">{i === 0 ? "Recovery" : i === 1 ? "Coaching" : i === 2 ? "Gym Floor" :  i === 3 ? "For women" :"Fitness Focus"}</div>
               </div>
             ))}
           </div>
