@@ -4,11 +4,15 @@ export default function HomePage() {
   return (
     <div className="flex flex-col items-center justify-center py-24 text-center gap-6">
       <h1 className="text-5xl font-extrabold text-gray-800">
-        Welcome to <span className="text-indigo-600">AI Shop</span>
+        Welcome to <span className="text-indigo-600">FitHub</span>
       </h1>
       <p className="text-gray-500 text-lg max-w-xl">
-        Discover products tailored for you. Browse our catalog, add items to
-        your cart, and let our AI recommend the best options for your needs.
+        Your ultimate destination for fitness and wellness.
+         Join our community of fitness enthusiasts and achieve 
+         your health goals with expert guidance, state-of-the-art 
+         facilities, and a supportive environment. Whether you're a beginner 
+         or a seasoned athlete, FitHub has something for everyone. Let's embark 
+         on this fitness journey together!
       </p>
       <div className="flex gap-4 mt-4">
         <Link
