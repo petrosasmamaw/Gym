@@ -34,7 +34,7 @@ export default function TrainersPage() {
                 <div className="text-yellow-400 text-sm font-medium mt-1">{t.role}</div>
                 <p className="mt-2 text-gray-400 text-sm">{t.bio}</p>
                 <div className="mt-4">
-                  <a href="#" className="inline-block bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-semibold">View Profile</a>
+                  <a href="#" className="inline-block bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-semibold">Contact</a>
                 </div>
               </div>
             </div>

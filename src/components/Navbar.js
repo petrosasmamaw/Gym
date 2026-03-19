@@ -19,7 +19,7 @@ export default function Navbar() {
             <a href="/" className="text-gray-700 dark:text-gray-300 hover:text-indigo-600">Home</a>
             <a href="/gym" className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 font-medium">Gym</a>
             <a href="#classes" className="text-gray-700 dark:text-gray-300 hover:text-indigo-600">Classes</a>
-            <a href="#trainers" className="text-gray-700 dark:text-gray-300 hover:text-indigo-600">Trainers</a>
+            <a href="/trainers" className="text-gray-700 dark:text-gray-300 hover:text-indigo-600">Trainers</a>
             <a href="#contact" className="text-gray-700 dark:text-gray-300 hover:text-indigo-600">Contact</a>
           </div>
 
@@ -49,7 +49,7 @@ export default function Navbar() {
             <a href="/" className="block text-gray-700 dark:text-gray-200 py-2">Home</a>
             <a href="/gym" className="block text-gray-700 dark:text-gray-200 py-2">Gym</a>
             <a href="#classes" className="block text-gray-700 dark:text-gray-200 py-2">Classes</a>
-            <a href="#trainers" className="block text-gray-700 dark:text-gray-200 py-2">Trainers</a>
+            <a href="/trainers" className="block text-gray-700 dark:text-gray-200 py-2">Trainers</a>
             <a href="#contact" className="block text-gray-700 dark:text-gray-200 py-2">Contact</a>
             <a href="/join" className="block text-indigo-600 font-medium py-2">Join</a>
           </div>
