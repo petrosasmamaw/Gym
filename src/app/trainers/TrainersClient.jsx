@@ -1,41 +1,20 @@
 "use client";
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useRouter } from 'next/navigation';
 import { fetchTrainers } from '../../store/slices/trainersSlice';
-import { supabase } from '../../lib/supabaseClient';
 
 export default function TrainersClient() {
   const dispatch = useDispatch();
   const { list, status } = useSelector((s) => s.trainers);
-  const router = useRouter();
-  const [authChecked, setAuthChecked] = useState(false);
-
-  useEffect(() => {
-    let mounted = true;
-    supabase.auth.getSession().then(({ data }) => {
-      if (!mounted) return;
-      if (!data.session) {
-        router.push('/login');
-      } else {
-        setAuthChecked(true);
-      }
-    });
-    return () => {
-      mounted = false;
-    };
-  }, [router]);
 
   useEffect(() => {
     if (status === 'idle') dispatch(fetchTrainers());
   }, [dispatch, status]);
 
-  if (!authChecked) return null;
-
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
       {list.map((t) => (
-        <div key={t._id} className="bg-gray-900/60 rounded-xl overflow-hidden p-0">
+        <div key={t._id || t.id || t.name} className="bg-gray-900/60 rounded-xl overflow-hidden p-0">
           <div className="w-full h-48 bg-gray-800">
             <img src={t.img} alt={t.name} className="w-full h-full object-cover" />
           </div>
