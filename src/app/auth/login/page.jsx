@@ -10,7 +10,7 @@ export default function LoginPage() {
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
+      <div className="absolute inset-0 bg-black/30 backdrop-blur-none" />
       <LoginForm />
     </div>
   );
